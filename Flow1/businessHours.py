@@ -44,7 +44,7 @@ def test_businessHours(driver,file):
                             if (len(randMinStr)<2):
                                 # randMinStr = '0'+randMinStr
                                 openTime.send_keys(Keys.RIGHT)
-                            randMinStr = '0'+randMinStr
+                                randMinStr = '0'+randMinStr
                             openTime.send_keys('AM')  
                             file.write('    Day: '+ repr(i-2) + ' Open Time: ' + repr(randHour)+':'+ repr(randMinStr) + 'AM   ')
                             
@@ -59,9 +59,9 @@ def test_businessHours(driver,file):
                             if (len(randMinStr)<2):
                                 # randMinStr = '0'+randMinStr
                                 openTime.send_keys(Keys.RIGHT)
-                            randMinStr = '0'+randMinStr
+                                randMinStr = '0'+randMinStr
                             openTime.send_keys('PM') 
                             file.write('    Day: '+repr(i-2)+ ' Close Time: ' + repr(randHour)+':'+ repr(randMinStr) + 'PM' + os.linesep)
                             
                     
-        time.sleep(10)
+        time.sleep(3)

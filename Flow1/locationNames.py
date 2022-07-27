@@ -12,10 +12,10 @@ def test_locationNames(driver,file):
         # locationNamesBtn = driver.find_element("xpath", "//*[@id='root']/div/div/div[1]/div/div/div[2]/div[2]/div[1]/div[2]")
         # locationNamesBtn.click()
         locationName = driver.find_element("xpath", "//*[@id='locationMainName']")
-        locationName.send_keys(Keys.CONTROL+"A")
-        locationName.send_keys(Keys.DELETE)
+        locationName.send_keys(Keys.CONTROL+"A") #Select all the text already exists
+        locationName.send_keys(Keys.DELETE) #Delete the previous text to insert a new one
         randomName = random.randint(0,100)
         locationName.send_keys('Solera'+str(randomName))
         file.write('    Name inserted:' + 'Solera'+str(randomName) + os.linesep)
-        time.sleep(2)
+        time.sleep(1)
         # # locationMainName.send_keys(Keys.ENTER)

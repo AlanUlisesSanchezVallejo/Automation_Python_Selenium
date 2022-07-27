@@ -47,8 +47,13 @@ class Usando_unittest(unittest.TestCase):
 		file.write('BUSINESS HOURS pass the test Successfully :)' + os.linesep)
 
 		test_submitButton(driver,file)
-		file.write('--- CONGRATULATIONS! Automation Regression test was a success ---')
+		
 
+		file.write('--- Location Details Page (Geofence, Truckpaths & Analytics).... ---' + os.linesep)
+		test_locationDetails(driver,file)
+		file.write('Location Details Page (Geofence, Truckpaths & Analytics) pass the test Successfully :)' + os.linesep)
+
+		file.write('--- CONGRATULATIONS! Automation Regression test was a success ---')
 		file.close()
 
 	def tearDown(self):

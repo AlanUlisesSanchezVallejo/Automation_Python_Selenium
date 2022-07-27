@@ -7,3 +7,4 @@ from .locationType import *
 from .contact import *
 from .submitBtn import *
 from .businessHours import *
+from .detailsPage import *

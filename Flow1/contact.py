@@ -29,7 +29,7 @@ def test_contact(driver,file):
         randomPhone = random.randint(1111111111,9999999998)
         phone.send_keys(str(randomPhone))
         file.write('    Value phone inserted: ' + str(randomPhone) + os.linesep)
-        time.sleep(5)
+        time.sleep(2)
 
 
 
