@@ -1,6 +1,6 @@
 # from businessHours import test_businessHours
 from .imports import *
-from .features import *
+from .features.features import *
 
 
 	
