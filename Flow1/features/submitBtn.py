@@ -1,5 +1,5 @@
-from Flow1.imports import *
-from Flow1.classes import *
+from ..imports import *
+from ..classes import *
 
 def test_submitButton(driver,file):
     submit = driver.find_element('xpath', '//*[@id="root"]/div/div/div[1]/div/div/div[1]/div[2]/button[2]')

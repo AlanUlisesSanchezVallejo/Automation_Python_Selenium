@@ -1,5 +1,7 @@
-from Flow1.imports import *
-from Flow1.classes import *
+# from Flow1.imports import *
+from ..imports import *
+from ..classes import *
+# from Flow1.classes import *
 
 
 def test_login(driver):

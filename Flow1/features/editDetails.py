@@ -1,6 +1,6 @@
 # from ast import If
-from Flow1.classes import *
-from Flow1.imports import *
+from ..classes import *
+from ..imports import *
 
 def test_editDetails(driver):
     handles = driver.window_handles 

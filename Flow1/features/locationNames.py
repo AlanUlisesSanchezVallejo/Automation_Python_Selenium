@@ -1,6 +1,6 @@
 from lib2to3.pgen2 import driver
-from Flow1.imports import *
-from Flow1.classes import *
+from ..imports import *
+from ..classes import *
 
 
 def test_locationNames(driver,file):

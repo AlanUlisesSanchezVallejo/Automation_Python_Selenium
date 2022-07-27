@@ -1,5 +1,5 @@
-from Flow1.imports import *
-from Flow1.classes import *
+from ..imports import *
+from ..classes import *
 
 
 def test_businessHours(driver,file):
@@ -40,11 +40,14 @@ def test_businessHours(driver,file):
                             openTime.send_keys(randHour) 
 
                             randMinStr = str(randMin)
-                            openTime.send_keys(randMinStr)
+                            
                             if (len(randMinStr)<2):
+                                openTime.send_keys(randMinStr)
                                 # randMinStr = '0'+randMinStr
                                 openTime.send_keys(Keys.RIGHT)
                                 randMinStr = '0'+randMinStr
+                            else:
+                                openTime.send_keys(randMinStr)
                             openTime.send_keys('AM')  
                             file.write('    Day: '+ repr(i-2) + ' Open Time: ' + repr(randHour)+':'+ repr(randMinStr) + 'AM   ')
                             
@@ -55,11 +58,14 @@ def test_businessHours(driver,file):
                             openTime.send_keys(randHour) 
 
                             randMinStr = str(randMin)
-                            openTime.send_keys(randMinStr)
+                            
                             if (len(randMinStr)<2):
+                                openTime.send_keys(randMinStr)
                                 # randMinStr = '0'+randMinStr
                                 openTime.send_keys(Keys.RIGHT)
                                 randMinStr = '0'+randMinStr
+                            else:
+                                openTime.send_keys(randMinStr)
                             openTime.send_keys('PM') 
                             file.write('    Day: '+repr(i-2)+ ' Close Time: ' + repr(randHour)+':'+ repr(randMinStr) + 'PM' + os.linesep)
                             

@@ -1,7 +1,7 @@
 from tkinter import Radiobutton
 from xml.dom.minidom import Element
-from Flow1.imports import *
-from Flow1.classes import *
+from ..imports import *
+from ..classes import *
 
 def test_locationTypes(driver,file):
     locationTypes = driver.find_element("xpath",'//*[@id="root"]/div/div/div[1]/div/div/div[2]/div[2]/div[1]/div[3]')
