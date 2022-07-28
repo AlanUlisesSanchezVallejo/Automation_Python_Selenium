@@ -27,6 +27,9 @@ class Usando_unittest(unittest.TestCase):
 
 		test_editDetails(driver)
 
+		test_closures(driver)
+
+
 	def tearDown(self):
 		self.driver.close()
 	#driver.close()
