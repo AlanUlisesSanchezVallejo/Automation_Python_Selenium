@@ -51,7 +51,7 @@ def test_businessHours(driver,file):
                             if (len(randMinStr)<2 ):
                                 randMinStr = '0'+randMinStr
                                 openTime.send_keys(randMinStr)
-                                # randMinStr = '0'+randMinStr
+                                # randMinStr = '0'+randMinStr rama flow1
                                 # openTime.send_keys(Keys.RIGHT)
                                 
                             else:
