@@ -20,7 +20,7 @@ def test_editDetails(driver):
         editButton = driver.find_element("xpath", "//*[@id='root']/div/div/div[1]/div/div/div/div[2]/div[1]/div/a/button")
         editButton.click()
         # time.sleep(5)
-        time.sleep(15)
+        # time.sleep(15)
         # driver.close()
 
 
