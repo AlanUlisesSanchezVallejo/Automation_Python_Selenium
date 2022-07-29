@@ -26,7 +26,7 @@ def test_closures(driver):
                 elif (rand == 0):
                     continue
     
-    time.sleep(5)
+    time.sleep(2)
 
 
 
