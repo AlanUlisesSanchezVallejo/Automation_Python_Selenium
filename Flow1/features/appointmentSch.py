@@ -59,7 +59,9 @@ def test_appointmentSch(driver):
 
 
             specialInstructions = driver.find_element('xpath','//*[@id="specialInstructions"]')
-            specialInstructions.send_keys('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate sit amet libero vel luctus. Suspendisse rutrum, nisi in molestie lobortis, dui dui mollis ante, aliquam accumsan dolor erat sit amet justo. Curabitur eget ultrices lectus. Nunc sollicitudin felis enim, sit amet auctor sem ornare nec. Sed pellentesque, massa vel mollis dictum, libero velit placerat nibh, sodales porta sem nisi sit amet lectus. Pellentesque mattis malesuada turpis in ultrices.')
+            specialInstructions.send_keys(Keys.CONTROL,"A")
+            specialInstructions.send_keys(Keys.DELETE)
+            specialInstructions.send_keys('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend faucibus risus non pellentesque. Nunc interdum condimentum tellus, non sollicitudin erat porta ut. Curabitur imperdiet odio nulla, in euismod felis vulputate in. Fusce tempus tempor arcu sit amet auctor. In non tortor at nulla fringilla molestie. Cras nec felis quis urna aliquam pellentesque et vehicula eros. Suspendisse scelerisque nec diam eu rhoncus. Suspendisse maximus neque neque, sit amet commodo nunc malesuada ut.')
 
     time.sleep(5)
 

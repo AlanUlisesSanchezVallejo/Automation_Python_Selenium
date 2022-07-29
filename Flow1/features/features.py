@@ -7,3 +7,4 @@ from .appointmentSch import *
 from .amenities import *
 from .services import *
 from .safetyReq import *
+from .procedures import *

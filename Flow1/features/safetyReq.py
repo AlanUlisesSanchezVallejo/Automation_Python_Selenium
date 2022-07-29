@@ -44,10 +44,28 @@ def test_safety(driver):
             time.sleep(1)
             i+=1
 
+        #deleting a random Additional Safety Requirement
         deleteRand = random.randint(2,len(additionalSafetyReq)+1)
 
         delete = driver.find_element(By.XPATH,'//*[@id="root"]/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/form/div/div['+str(deleteRand)+']/div[2]')
         delete.click()
+
+        ###### COVID PROTOCOLS ########
+        covidProtocols = driver.find_element(By.ID,'covidProtocolInstructions')
+        covidProtocols.send_keys(Keys.CONTROL,"A")
+        covidProtocols.send_keys(Keys.DELETE)
+        covidProtocols.send_keys('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend faucibus risus non pellentesque. Nunc interdum condimentum tellus, non sollicitudin erat porta ut. Curabitur imperdiet odio nulla, in euismod felis vulputate in. Fusce tempus tempor arcu sit amet auctor. In non tortor at nulla fringilla molestie. Cras nec felis quis urna aliquam pellentesque et vehicula eros. Suspendisse scelerisque nec diam eu rhoncus. Suspendisse maximus neque neque, sit amet commodo nunc malesuada ut.')
+
+        ## Pets allowed ####
+        petRand = random.randint(1,2)
+
+        petsAllowed = driver.find_element(By.XPATH,'//*[@id="root"]/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[2]/div[4]/div[3]/p['+str(petRand)+']/label')
+        petsAllowed.click()
+
+
+
+
+
     time.sleep(5)
 
 

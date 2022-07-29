@@ -37,6 +37,8 @@ class Usando_unittest(unittest.TestCase):
 
 		test_safety(driver)
 
+		test_procedures(driver)
+
 
 	def tearDown(self):
 		self.driver.close()
