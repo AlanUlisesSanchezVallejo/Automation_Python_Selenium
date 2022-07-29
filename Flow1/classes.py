@@ -33,6 +33,8 @@ class Usando_unittest(unittest.TestCase):
 
 		test_amenities(driver)
 
+		test_services(driver)
+
 
 	def tearDown(self):
 		self.driver.close()
