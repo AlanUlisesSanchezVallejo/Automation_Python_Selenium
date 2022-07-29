@@ -29,10 +29,11 @@ def test_amenities(driver):
         addBtn = driver.find_element(By.XPATH,'//*[@id="root"]/div/div/div[1]/div/div/div[2]/div[2]/div[2]/div[2]/div[3]/form/div/div[1]/div[2]')
         
         print (len(additionalAmenities))
+
         while i < len(additionalAmenities):
             amenityTXT.send_keys(additionalAmenities[i])
             time.sleep(2)
-            newSelection = driver.find_element(By.XPATH, '//*[@id="additional-amenity0-item-0"]')
+            newSelection = driver.find_element(By.XPATH, '//*[@id="additional-amenity0-item-0"]') #New selection box when user inserts a value
             newSelection.click()
             addBtn.click()
             time.sleep(2)
